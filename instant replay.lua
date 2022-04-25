@@ -21,12 +21,17 @@ function on_event(e)
     proccessing = true
     --print(proccessing and "true" or "false")
   end
-  if(e == obs.OBS_FRONTEND_EVENT_REPLAY_BUFFER_STOPPED)then
+  if e == obs.OBS_FRONTEND_EVENT_REPLAY_BUFFER_STOPPED then
     --print(proccessing and "true" or "false")
     if proccessing then
       sleep()
       obs.obs_frontend_replay_buffer_start()
       proccessing = false
+    end
+  end
+  if e == obs.OBS_FRONTEND_EVENT_FINISHED_LOADING then
+    if not(obs.obs_frontend_replay_buffer_active()) then
+      obs.obs_frontend_replay_buffer_start()
     end
   end
 end
