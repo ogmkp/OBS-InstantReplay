@@ -1,11 +1,11 @@
 # OBS-InstantReplay
-make a clips like a geforce's instant replay  on OBS studio
+Geforceのインスタントリプレイと同様の動作でOBSのリプレイバッファでの録画を行うためのスクリプトです。
 
 # Comparation
 ![OBS VS GF](readme/comp.png)
 
 # Installation
-**You can delete files expect for instant replay.lua**
+**instant replay.lua以外のファイルは削除しても大丈夫です。**
 ![Install1](readme/installation1.png)
 ![Install2](readme/installation2.png)
-on OBS, `Tools` on menu -> `Script` ->(open new window)-> + -> select `instant replay.lua`
+OBSのウィンドウで、, `Tools` on menu -> `Script` ->(新しいウィンドウが開きます)-> ＋マーク -> `instant replay.lua`を選択してください。
