@@ -1,5 +1,6 @@
 # OBS-InstantReplay
 Geforceのインスタントリプレイと同様の動作でOBSのリプレイバッファでの録画を行うためのスクリプトです。
+[追記]OBS起動時自動でリプレイバッファをONにする機能を付けました！
 
 # Comparation
 ![OBS VS GF](readme/comp.png)
